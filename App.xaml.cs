@@ -53,7 +53,8 @@ namespace PowerDimmer
                 iconController.NotifyIcon.Dispose();
             };
 
-            HotkeyManager.Current.AddOrReplace("PowerDimmerHotkey", Key.D, ModifierKeys.Windows | ModifierKeys.Control | ModifierKeys.Alt, true, (s, e) =>
+            //HotkeyManager.Current.AddOrReplace("PowerDimmerHotkey", Key.D, ModifierKeys.Windows | ModifierKeys.Control | ModifierKeys.Alt, true, (s, e) =>
+            HotkeyManager.Current.AddOrReplace("PowerDimmerHotkey", Key.D, ModifierKeys.Windows | ModifierKeys.Control | ModifierKeys.Shift, true, (s, e) =>
             {
                 settings.DimmingEnabled = !settings.DimmingEnabled;
             });

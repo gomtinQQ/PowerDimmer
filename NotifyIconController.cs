@@ -23,7 +23,8 @@ namespace PowerDimmer
                         .SetChecked(settings.ActiveOnLaunch)
                         .ConfigureItem(item =>
                         {
-                            item.ShortcutKeyDisplayString = "CTRL+WIN+ALT+D";
+                            item.ShortcutKeyDisplayString = "CTRL+SHIFT+WIN + D";
+                            //item.ShortcutKeyDisplayString = "CTRL+WIN+ALT+D";
 
                             settings.PropertyChanged += (_, e) =>
                             {
